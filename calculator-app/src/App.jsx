@@ -23,13 +23,13 @@ function App() {
         case "+":
           result = prev + current;
           break;
-        case "−":
+        case "-":
           result = prev - current;
           break;
-        case "×":
+        case "*":
           result = prev * current;
           break;
-        case "÷":
+        case "/":
           result = prev / current;
           break;
         default:
@@ -38,11 +38,6 @@ function App() {
       setCurrentNumber(result.toString());
       setPreviousNumber(null);
       setOperation(null);
-    }else{
-      setCurrentNumber('Error');
-      setPreviousNumber(null);
-      setOperation(null);
-
     }
   }
 
